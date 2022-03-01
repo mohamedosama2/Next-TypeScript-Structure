@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap');
+
 html,
 body {
   padding: 0;
@@ -13,4 +19,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #5c6ac4;
+  --color-secondary: #ecc94b;
 }
