@@ -1,0 +1,62 @@
+@import "./helper/responsive";
+
+
+.mainBtn {
+  @apply rounded-full px-7 py-2 font-header bg-primary text-white mx-1;
+  @apply hover:bg-white hover:text-primary transition-all;
+}
+.secondary {
+  @apply rounded-full px-7 py-2 font-header text-primary bg-white mx-1 border-2 border-primary;
+  @apply hover:bg-primary hover:text-white hover:transition-all;
+}
+.main {
+  @apply  flex flex-row-reverse justify-around items-center mx-20 my-20;
+  @include respon(phone){
+    @apply flex-wrap-reverse;
+  }
+ 
+  h2 {
+    @apply font-header text-2xl text-text text-right;
+  }
+  p {
+    @apply font-header text-4xl text-text text-black text-right;
+    line-height: 1.8;
+  }
+}
+.btn {
+  @apply px-20 my-5;
+}
+.bg {
+  background: linear-gradient(to right bottom, #0272eb, rgb(26, 147, 212));
+}
+
+.Courses {
+  @apply bg-white px-10 py-20 text-center;
+  h2{
+    @apply text-black font-header text-2xl;
+  }
+  h3{
+    @apply text-primary font-header text-3xl mb-5;
+  }
+  section{
+    @apply px-20  flex items-center flex-wrap justify-center ;
+  }
+}
+.Course{
+  @apply my-1 mx-2 border-dotted rounded-lg text-center p-5 border-2 border-zinc-400 ;
+  h5,h4{
+    @apply font-header ;
+  }
+  h5{
+    @apply text-primary ;
+  }
+}
+.btn{
+  @apply px-72 hover:border-primary hover:border-2 ;
+  @include respon(tap-land){
+    @apply px-44 ;
+  }
+  @include respon(phone){
+    @apply px-10 w-4/5;
+  }
+}

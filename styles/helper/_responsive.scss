@@ -1,0 +1,49 @@
+@mixin respon($breakepoint) {
+  @if $breakepoint==small-phone {
+    @media only screen and (max-width: 30em) {
+      @content;
+    } //300
+  }
+  @if $breakepoint==phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakepoint==tap-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakepoint==tap-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakepoint==desktop {
+    @media only screen and (max-width: 90em) {
+      @content;
+    }
+  }
+  @if $breakepoint== big-disktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+//usage
+// @include respon(phone){
+//     //content
+// }
+/*
+
+0:600      phone
+600:900    tablet portrait
+900:1200   tablet landscape
+1200:1800  normal style
+1800:+     big disktop
+
+
+order to make it responsive :Base > typography > general layout > grid > page layout >components
+
+1em=16px
+*/

@@ -1,0 +1,78 @@
+.Subscribtions {
+  background: url("../../public/BG2.svg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 2rem;
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 20000;
+    h2 {
+      @apply font-header text-white text-5xl font-bold;
+    }
+    p {
+      @apply font-header text-white text-2xl py-4;
+    }
+  }
+  ul {
+    @apply w-full flex justify-end items-center px-14;
+    li {
+      @apply text-black font-header text-xl p-4 cursor-pointer;
+    }
+  }
+}
+.c1 {
+  position: absolute;
+  right: -10%;
+  top: 18%;
+  z-index: 100;
+}
+.c2 {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  z-index: 100;
+}
+.cards {
+  @apply flex-wrap flex items-center justify-center content-between px-10 my-5 text-center;
+  background-color: #f7f7f7;
+  margin-top: -10rem;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+}
+
+.card {
+  height: 30rem;
+  @apply m-6 shadow-lg rounded-lg overflow-hidden bg-white hover:scale-105 transition-all;
+
+
+  ul {
+    li {
+      @apply my-5 font-header text-gray-400 text-xl border-b-2 border-gray-200 w-2/4 m-auto;
+    }
+  }
+}
+.sub{
+  background-color: #05fbfc;
+}
+.heading {
+  background: linear-gradient(to right bottom, #05fbfc, #2aa9ff);
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 100%);
+  text-align: center;
+  h2 {
+    @apply text-white text-4xl font-header  px-36 py-14;
+  }
+}
+.headingActive {
+  background: linear-gradient(to right bottom, #690fad, #bb89ec);
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 100%);
+  text-align: center;
+  h2 {
+    @apply text-white text-4xl font-header  px-36 py-14;
+  }
+}

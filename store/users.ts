@@ -10,15 +10,15 @@ export const userApi = createApi({
     baseUrl: "https://jsonplaceholder.typicode.com/",
   }),
   endpoints: (builder) => ({
-    getUsers: builder.query<User[], void>({
-      query: () => ({ url: `users` }),
+    getProfile: builder.query<User, void>({
+      query: () => ({ url: `users/profile` }),
     }),
   }),
 });
 
 // Export hooks for usage in function components, which are
 // auto-generated based on the defined endpoints
-export const { useGetUsersQuery } = userApi;
+export const { useGetProfileQuery } = userApi;
 
 ///Access Api
 /* import { pokemonApi } from './pokemon'

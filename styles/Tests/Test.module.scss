@@ -1,0 +1,26 @@
+.Test {
+  @apply  bg-slate-300 flex items-center content-between;
+  @apply py-20 px-10;
+  img{
+      width: 50%;
+  }
+  min-height: 100vh;
+  h1 {
+    @apply font-header text-black text-2xl;
+  }
+  h2 {
+    @apply font-header text-primary text-4xl py-2;
+  }
+  .answers {
+      text-align: right;
+      direction: rtl;
+    div {
+      @apply flex items-center font-header my-2;
+      p {
+        @apply border-2 border-primary rounded-full mx-5 p-2;
+      }
+      h5 {
+      }
+    }
+  }
+}

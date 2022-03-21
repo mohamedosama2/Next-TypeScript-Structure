@@ -1,0 +1,43 @@
+.Tests {
+  background: linear-gradient(
+    to right bottom,
+    rgb(169, 206, 238),
+    rgb(22, 142, 205)
+  );
+  min-height: 100vh;
+  h2 {
+    @apply font-header text-center text-white text-3xl py-10;
+  }
+  main {
+    @apply flex flex-wrap items-center content-center px-24 justify-center;
+  }
+}
+.TestCard {
+  @apply text-right bg-white px-8 py-6 rounded-2xl font-header m-6 relative shadow-md hover:bg-emerald-300 transition-all cursor-pointer;
+
+  h3 {
+    @apply pt-5 text-2xl;
+  }
+  p {
+    @apply text-slate-400 text-xl pb-5;
+  }
+  .CardItems {
+    @apply flex items-center justify-end;
+    div {
+      @apply flex items-center flex-row-reverse ml-3 mt-2;
+      h5 {
+        direction: rtl;
+      }
+    }
+  }
+  h6 {
+    @apply absolute left-0 top-0 bg-red-400 px-4 py-2 rounded-br-xl text-white font-header;
+    direction: rtl;
+  }
+  .now {
+    @apply bg-green-400;
+  }
+}
+.hr {
+  @apply h-0.5 bg-slate-300 mx-auto;
+}

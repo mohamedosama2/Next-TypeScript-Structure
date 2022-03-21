@@ -4,7 +4,10 @@ import { Formik } from "formik";
 // create a component
 interface Props {
   children: React.ReactChild[];
-  onSubmit: (values: any, actions: any) => Promise<SubmitEvent> | void;
+  onSubmit: (
+    values: any,
+    actions: any
+  ) => Promise<SubmitEvent> | Promise<void> | any;
   initialValues: object;
   validationSchema: any;
 }

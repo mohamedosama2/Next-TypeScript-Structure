@@ -1,0 +1,75 @@
+.Profile {
+  height: 100vh;
+  @apply bg-white flex items-center flex-wrap px-24;
+}
+.Profile__info {
+  @apply text-center m-auto;
+  h2 {
+    @apply font-header text-5xl my-1;
+  }
+  h3 {
+    @apply font-header text-3xl my-4;
+  }
+  p {
+    background-color: #bb89ec;
+    @apply font-header text-white text-2xl my-1 rounded-full py-1 cursor-pointer;
+  }
+}
+.Profile__images {
+  position: relative;
+  background: url("../../public/profile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.TapBg {
+  @apply bg-white px-36  py-20;
+}
+.Tap {
+  @apply bg-white shadow-xl rounded-lg;
+}
+.Tap__list {
+  @apply flex items-center text-black text-center;
+  div {
+    @apply px-4 py-3 cursor-pointer mx-2;
+    h2 {
+      @apply font-header text-2xl;
+    }
+    i {
+      color: #bb89ec;
+    }
+  }
+}
+
+.Tap__data {
+  @apply px-10 py-5;
+  h2 {
+    @apply font-header text-2xl my-2;
+  }
+}
+
+.data {
+  color: #690fad;
+  div {
+    @apply rounded-full px-8 shadow-lg flex items-center justify-between py-4 ;
+   /*  background: linear-gradient(to right bottom, #690fad, #bb89e c);*/
+ /*    background: #fff; */
+  }
+}
+.active {
+  background: #bb89ec;
+  @apply rounded-lg text-white;
+}
+
+.heading {
+  @apply text-2xl w-1/4 text-white mx-auto rounded-lg shadow-md my-6 py-3 text-center;
+  background: #690fad;
+}
+.Profile__sub {
+  @apply bg-white text-center font-header py-10;
+  .cards {
+    @apply flex content-center justify-center flex-wrap;
+  }
+}

@@ -14,13 +14,13 @@ const AppFormFild = ({ name, ...othetProps }: Props) => {
   return (
     <>
       {/* <input onB /> */}
+      <ErrorMessage visible={touched[name]} error={errors[name]} />
       <input
         onChange={(e) => setFieldValue(name, e.target.value)}
         onBlur={() => setFieldTouched(name)}
         value={values[name] }
         {...othetProps}
       />
-      <ErrorMessage visible={touched[name]} error={errors[name]} />
     </>
   );
 };

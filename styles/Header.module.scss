@@ -1,6 +1,43 @@
-.bg {
-  background-color: green;
+@import "./helper/responsive";
+
+.Header {
+  @apply flex items-center justify-between px-10 py-0.5 bg-slate-50;
+  position: fixed;
+  top:0; 
+  left:0;
+  width: 100%;
+  z-index: 222;
+  .list {
+    @apply flex items-center flex-wrap;
+    @include respon(tap-port) {
+      @apply hidden;
+    }
+    li {
+      @apply inline-block mx-4 text-text font-header text-xl cursor-pointer hover:text-black transition-all;
+    }
+  }
 }
-.cl {
-  color: var(--color-secondary);
+
+.HomeHeader {
+  @apply flex items-center justify-between px-10 py-1 ;
+  position: sticky;
+  top:0; 
+  left:0;
+  width: 100%;
+  z-index: 222;
+  .list {
+    @apply flex items-center flex-wrap;
+    @include respon(tap-port) {
+      @apply hidden;
+    }
+    li {
+      @apply inline-block mx-4 text-text font-header text-xl cursor-pointer hover:text-black transition-all;
+    }
+  }
+}
+.hr {
+  @apply bg-grey h-0.5 w-11/12 mx-auto my-0;
+}
+.img{
+  margin: 10px 0;
 }

@@ -4,16 +4,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    margin: {
-      'left': "right",
-    },
     extend: {
       fontFamily: {
-        header: ["Roboto Serif", "sans-serif"],
+        header: ["Amiri", "serif"],
       },
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        white: "var(--color-white)",
+        grey: "var(--color-grey)",
+        text: "var(--color-text)",
       },
     },
   },

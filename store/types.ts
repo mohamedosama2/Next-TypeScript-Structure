@@ -9,13 +9,14 @@ export const axiosBaseQuery =
       url: string;
       method?: AxiosRequestConfig["method"];
       data?: AxiosRequestConfig["data"];
+      headers?: AxiosRequestConfig["headers"];
     },
     unknown,
     unknown
   > =>
-  async ({ url, method = "GET", data }) => {
+  async ({ url, method = "GET", data, headers }) => {
     try {
-      const result = await axios({ url: baseUrl + url, method, data });
+      const result = await axios({ url: baseUrl + url, method, data, headers });
       return { data: result.data };
     } catch (axiosError) {
       let err = axiosError as AxiosError;

@@ -1,0 +1,65 @@
+.Home {
+  min-height: 100vh;
+  background: linear-gradient(
+    to right bottom,
+    rgb(169, 206, 238),
+    rgb(22, 142, 205)
+  );
+  @apply flex flex-wrap items-center justify-center content-center;
+}
+.HomeItem {
+  @apply font-header bg-white font-bold text-2xl p-20 text-primary border-4 border-white rounded-lg shadow-md  m-2 cursor-pointer;
+}
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter:blur(2px) ;
+  background-color: rgba($color: #000000, $alpha: .2);
+  left: 0;
+  top: 0;
+  z-index: 1111;
+  perspective: 100px;
+}
+.Modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1111;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 252, 252);
+
+  @apply w-2/4 rounded-lg shadow-xl overflow-hidden;
+  @apply font-header;
+  .Head {
+    @apply flex items-center;
+    h2 {
+      @apply w-2/4 text-2xl text-center px-5 py-3 bg-slate-300 cursor-pointer;
+    }
+    .active {
+      background: #fff;
+    }
+  }
+  .Form {
+    @apply px-20 text-right;
+    div {
+      @apply flex flex-col-reverse mx-4 my-3;
+      label {
+        @apply block my-1;
+      }
+      input {
+        @apply border-2  rounded-sm outline-0 px-2 py-1 text-right shadow-sm;
+      }
+      input:focus + label {
+        @apply text-primary;
+      }
+      input:focus {
+        @apply border-primary;
+      }
+    }
+  }
+}
+.btns{
+  flex-direction: row !important ;
+  @apply items-center justify-between px-5  ;
+}

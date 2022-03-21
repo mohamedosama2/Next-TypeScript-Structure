@@ -11,7 +11,7 @@ interface Props {
 const ErrorMessage = ({ error, visible }: Props) => {
   if (!error || !visible) return null;
   return (
-    <motion.p initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }}>
+    <motion.p initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0,color:'red' }}>
       {error}
     </motion.p>
   );
